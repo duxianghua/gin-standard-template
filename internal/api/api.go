@@ -5,8 +5,8 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func Run() {
+func Service() *gin.Engine {
 	r := gin.Default()
 	router.Register(r)
-	r.Run()
+	return r
 }
