@@ -1,0 +1,12 @@
+FROM centos:7
+
+WORKDIR /app
+
+COPY ./bin/demo .
+
+EXPOSE 8080
+
+ENV PORT 8080
+ENV HOST 0.0.0.0
+
+ENTRYPOINT ["./demo"]
